@@ -49,8 +49,8 @@ app.get("/findSummation/:num1/:num2", (req, res) => {
   res.send(`the total number is : ${total}`);
 });
 
-app.put("/hi", (req, res) => {
-  res.send("hi");
+app.put("/", (req, res) => {
+  res.send("hi welcome to this page");
 });
 app.post("/addComment", (req, res) => {
   res.send("post request on add comment");
