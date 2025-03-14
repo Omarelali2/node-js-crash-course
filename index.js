@@ -17,7 +17,9 @@ mongoose
   });
 
 const article = require("./models/article");
-
+app.get("/", (req, res) => {
+  res.send("hi welcome to this page");
+});
 
 app.get("/hello", (req, res) => {
   let num = "";
@@ -49,9 +51,7 @@ app.get("/findSummation/:num1/:num2", (req, res) => {
   res.send(`the total number is : ${total}`);
 });
 
-app.get("/", (req, res) => {
-  res.send("hi welcome to this page");
-});
+
 app.post("/addComment", (req, res) => {
   res.send("post request on add comment");
 });
