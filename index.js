@@ -49,7 +49,7 @@ app.get("/findSummation/:num1/:num2", (req, res) => {
   res.send(`the total number is : ${total}`);
 });
 
-app.put("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("hi welcome to this page");
 });
 app.post("/addComment", (req, res) => {
